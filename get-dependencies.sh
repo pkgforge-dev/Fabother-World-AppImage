@@ -28,4 +28,4 @@ echo "$VERSION" > ~/version
 mkdir -p ./AppDir/bin
 cd ./Another
 cmake ./ && make -j$(nproc)
-mv -v raw ../AppDir/bin
+mv -v raw ../AppDir/bin/fabother-world
