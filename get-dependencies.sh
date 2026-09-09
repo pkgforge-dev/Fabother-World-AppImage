@@ -18,7 +18,7 @@ echo "Building Fabother World..."
 echo "---------------------------------------------------------------"
 REPO="https://github.com/fabiensanglard/Another-World-Bytecode-Interpreter"
 VERSION="$(git ls-remote "$REPO" HEAD | cut -c 1-9 | head -1)"
-git clone "$REPO" ./Another
+git clone --depth 1 "$REPO" ./Another
 echo "$VERSION" > ~/version
 
 mkdir -p ./AppDir/bin
